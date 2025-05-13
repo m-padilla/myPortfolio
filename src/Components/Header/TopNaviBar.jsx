@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function ShowMenuLinks() {
   const menulinkslist = [
-      {name:'About',id:'/about'},
+      {name:'About',id:'/'},
       // {name:'Interests',id:'/interests'},
       // {name:'Work Experience', id:'/work'},
       // {name:'Technical Projects',id:'/projects'},

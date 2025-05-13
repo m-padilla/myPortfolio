@@ -11,7 +11,7 @@ function App() {
     <div className="w-full h-screen bg-primart">
       <TopNaviBar/>
     <Routes>
-      <Route path="/about" element={<About/>} />
+      <Route path="/" element={<About/>} />
       {/* <Route path="/interests" element={<Interests/>} />
       <Route path="/work" element={<Work/>} />
       <Route path="/projects" element={<Projects/>} /> */}
