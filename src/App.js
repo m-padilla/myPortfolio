@@ -1,9 +1,9 @@
 import {Route, Routes} from "react-router-dom"
 import TopNaviBar from "./Components/Header/TopNaviBar";
 import About from './Components/Pages/About/About'
-// import Interests from './Components/Pages/Interests/Interests'
-// import Work from './Components/Pages/Work/Work'
-// import Projects from './Components/Pages/Projects/Projects'
+import Work from './Components/Pages/Work/Work'
+import Projects from './Components/Pages/Projects/Projects'
+import Awards from "./Components/Pages/Awards/Awards";
 
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
       <TopNaviBar/>
     <Routes>
       <Route path="/" element={<About/>} />
-      {/* <Route path="/interests" element={<Interests/>} />
       <Route path="/work" element={<Work/>} />
-      <Route path="/projects" element={<Projects/>} /> */}
+      <Route path="/projects" element={<Projects/>} />
+      <Route path="/awards" element={<Awards/>}/>
     </Routes>
   </div>  
   );

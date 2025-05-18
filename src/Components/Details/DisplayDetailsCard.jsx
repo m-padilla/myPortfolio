@@ -1,21 +1,30 @@
 
 function DisplayDetailsCard({ details }) {
   return (
-    <div className='ti_items'>
+    <div className='mt-14'>
 
       {details.map(i => (
-        <div className=''>
+        <div className='mx-[100px] mb-12 p-5 rounded-xl bg-secondary font-sans'>
 
-          {i.image ? <><img src={ i.image } className='ti_items_card_image' alt={ i.imageAlt }/><br/></> : null }
+          {i.image ? <img src={ i.image } className='h-[100px] pb-3' alt={ i.imageAlt }/> : null }
 
-          <a href={i.link} className='ti_items_card_link fs2' target='_blank' rel='noopener noreferrer' style={ {fontWeight: 'bold'} }>{ i.name }</a>
-          <div className='ti_items_card_title fs1'>{ i.description }</div>
-          <div className='ti_items_card_title fs1'>{ i.technologies }</div>
-          <div className='ti_items_card_date fs1'>{ i.date }</div>
+          <a 
+          href={i.link} 
+          className='font-bold text-2xl transition-all duration-[0.2s] ease-in-out delay-0 transition-normal' 
+          target='_blank' 
+          rel='noopener noreferrer' 
+          >
+            { i.name }
+          </a>
+
+          <div className='text-sm'>{ i.description }</div>
+          <div className='text-sm'>{ i.technologies }</div>
+          <div className='text-sm'>{ i.date }</div>
           {i.content.map(j => (
-            <ul>
-            <li className='ti_items_card_maintext fs1'>{j}</li>
-            </ul>
+            <div className=" flex">
+              <div className="pr-2 text-3xl  align-top leading-6 ">•</div>
+              <p className='leading-6 text-xs p-0 m-0'>{j}</p>
+            </div>
           ))}
 
         </div>

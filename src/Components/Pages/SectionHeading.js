@@ -1,11 +1,11 @@
-import React from 'react';
-import './SectionHeading.sass';
 
-function SectionHeading(props) {
+function SectionHeading({ text, syling }) {
   return (
-    <div className='sectionheading_parent'>
+    <div className='text-center w-screen font-sans'>
 
-      <div className='sectionheading_text fs1' style={{color:props.color}}><b>{props.text}</b></div>
+      <div className={ syling }>
+        <b>{ text }</b>
+      </div>
 
     </div>
   );

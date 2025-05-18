@@ -1,20 +1,19 @@
-import './Footer.sass'
-// import Resume from '../../Components/Images/resume.pdf';
-import ShowSocials from '../Interests/Socials';
+import ShowSocials from '../../Components/Details/Socials';
 
 
 function Footer() {
   return (
-    <div className='footer_main'>
+    <div className='font-sans'>
 
-      <div className='footer'>
+      <div className='py-[75px] text-center bg-secondary'>
 
-        {/* <a className='footer_name fs3' href={'#'}><b>Marco Padilla</b></a> */}
-        <div className='footer_name fs3'><b>Marco A. Padilla</b></div>
+        <div className='text-white transition-all delay-0 duration-[0.2s] ease-in m-0 transition-normal text-2xl inline-block'>
+          <b>Marco A. Padilla</b>
+        </div>
 
-        <div className='footer_text fs1'>Thanks for visiting!</div>
+        <div className='text-white text-xs '>Thanks for visiting!</div>
 
-        <ShowSocials />
+        <ShowSocials isFooter='True' />
 
       </div>
 
