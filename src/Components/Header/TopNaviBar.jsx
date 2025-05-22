@@ -12,9 +12,11 @@ function ShowMenuLinks() {
       <div className="flex">
         {menulinkslist.map(item => (
           <ul>
-            <li className="list-none block text-white p-2 mx-2 rounded-lg hover:bg-sky-400 hover:text-white">
-              <NavLink to={item.id}>{item.name}</NavLink>
+            <NavLink to={item.id}>
+              <li className="list-none block text-white p-2 mx-2 rounded-lg hover:bg-sky-400 hover:text-white">
+                {item.name}
               </li>
+              </NavLink>
           </ul>
           
         ))}
