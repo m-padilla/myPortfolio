@@ -8,7 +8,7 @@ import Awards from "./Components/Pages/Awards/Awards";
 
 function App() {
   return (
-    <div className="w-full h-screen bg-primart">
+    <div className="w-full h-screen bg-primary">
       <TopNaviBar/>
     <Routes>
       <Route path="/" element={<About/>} />
