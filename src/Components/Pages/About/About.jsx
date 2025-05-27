@@ -1,14 +1,14 @@
 import HomeImage from "../../../assests/placeholderimage.jpg";
-import Resume from "../../../assests/Resume_updated.pdf";
+// import Resume from "../../../assests/Resume_updated.pdf";
 import Interest from "../Interests/Interests"
-import { ImProfile } from "react-icons/im";
+// import { ImProfile } from "react-icons/im";
 
 import { TypeAnimation } from "react-type-animation";
 
 function ShowContentsHeader() {
   const content = [
     {
-      line: "Currently a graduate from CalState LA, I am an aspiring software engineer",
+      line: "A recent graduate from CalState LA, I am an aspiring software engineer",
       photo: HomeImage,
     },
   ];

@@ -10,10 +10,10 @@ function ShowSkills() {
   return (
     <div>
       {s.map(i => (
-        <a 
-        className='inline-block px-7 leading-7 mr-1 mb-1 rounded-md bg-black  text-white transition-all duration-[0.2s] ease-in-out delay-0 transition-normal text-sm '>
+        <button 
+        className='hover:cursor-default inline-block px-7 leading-7 mr-1 mb-1 rounded-md bg-black  text-white transition-all duration-[0.2s] ease-in-out delay-0 transition-normal text-sm '>
           {i}
-        </a>
+        </button>
       ))}
     </div>
   )
