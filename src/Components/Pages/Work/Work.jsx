@@ -71,12 +71,12 @@ function Work() {
 
         <SectionHeading text='Work Experience' syling='text-white text-4xl' />
 
-        <button
-          onClick={() => setShowModal(true)}
-          className=''
+        <div
+        role='button'
+        onClick={() => setShowModal(true)}
         >
           <DisplayDetailsCard details={work} />
-        </button>
+        </div>
 
         <Modal show={showModal} onClose={() => setShowModal(false)}>
           <Slider data={workDetails} />
