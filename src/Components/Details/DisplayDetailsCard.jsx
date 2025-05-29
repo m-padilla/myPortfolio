@@ -1,12 +1,14 @@
 
 function DisplayDetailsCard({ details }) {
+
+
   return (
-    <div className='mt-14'>
+    <div className='mt-14 flex'>
 
       {details.map(i => (
-        <div className='mx-[100px] mb-12 p-5 rounded-xl bg-secondary font-sans'>
+        <div className='w-max max-h-min mx-auto p-3 mb-12 rounded-xl bg-secondary font-sans'>
 
-          {i.image ? <img src={i.image} className='h-[100px] pb-3' alt={i.imageAlt} /> : null}
+          {i.image ? <img src={i.image} className='h-[150px] rounded-md' alt={i.imageAlt} /> : null}
 
           <a
             href={i.link}
@@ -17,8 +19,10 @@ function DisplayDetailsCard({ details }) {
             {i.name}
           </a>
 
-          <div className='text-sm'>{i.description}</div>
-          <div className='text-sm italic'>{i.technologies}</div>
+          {i.description ?  <p className='text-sm'>{i.description}</p> : null }
+
+          {i.technologies ? <p className='text-sm italic text-nowrap'>{i.technologies}</p> : null}
+          {i.institution ? <p className='text-sm italic text-nowrap'>{i.intitution}</p> : null}
 
           {
             Array.isArray(i.dates) && i.dates.length > 1
@@ -27,18 +31,8 @@ function DisplayDetailsCard({ details }) {
                   <div className="pr-2 text-3xl  align-top leading-6 ">•</div>
                   <p className='leading-6 text-sm p-0 m-0 text-nowrap'>{d}</p>
                 </div>) : <p className='leading-6 text-sm p-0 m-0 text-nowrap'>{i.date}</p>}
-
-
-          {i.content ? i.content.map(j => (
-            <div className=" flex">
-              <div className="pr-2 text-3xl  align-top leading-6 ">•</div>
-              <p className='leading-6 text-xs p-0 m-0'>{j}</p>
-            </div>
-          )) : null}
-
         </div>
       ))}
-
 
     </div>
   );
