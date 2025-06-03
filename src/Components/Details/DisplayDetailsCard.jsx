@@ -3,36 +3,28 @@ function DisplayDetailsCard({ details }) {
 
 
   return (
-    <div className='mt-14 flex'>
+    <div className='bg-secondary shadow-lg w-60 mx-auto my-5 max-h-fit rounded-lg '>
 
-      {details.map(i => (
-        <div className='w-max max-h-min mx-auto p-3 mb-12 rounded-xl bg-secondary font-sans'>
+          {details.image ? <img src={details.image} className='rounded-t-xl w-[320px] ' alt={details.imageAlt} /> : null}
 
-          {i.image ? <img src={i.image} className='h-[150px] rounded-md' alt={i.imageAlt} /> : null}
+          {/* Heading/ Name of j */}
+          <h3 className='font-bold mt-3 pl-2 text-white'>{details.name} </h3>
 
-          <a
-            href={i.link}
-            className='font-bold text-2xl transition-all duration-[0.2s] ease-in-out delay-0 transition-normal'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            {i.name}
-          </a>
+          {/* text of the details */}
+          <div className="text-gray-400 text-sm p-2">
+          {details.description ? <p >{details.description}</p> : null}
 
-          {i.description ?  <p className='text-sm'>{i.description}</p> : null }
-
-          {i.technologies ? <p className='text-sm italic text-nowrap'>{i.technologies}</p> : null}
-          {i.institution ? <p className='text-sm italic text-nowrap'>{i.intitution}</p> : null}
-
+          {details.technologies ? <p className='italic pr-4'>{details.technologies}</p> : null}
+          {details.institution ? <p className='italic pr-4' >{details.institution}</p> : null}
           {
-            Array.isArray(i.dates) && i.dates.length > 1
-              ? i.dates.map((d) =>
-                <div className=" flex">
-                  <div className="pr-2 text-3xl  align-top leading-6 ">•</div>
-                  <p className='leading-6 text-sm p-0 m-0 text-nowrap'>{d}</p>
-                </div>) : <p className='leading-6 text-sm p-0 m-0 text-nowrap'>{i.date}</p>}
-        </div>
-      ))}
+            Array.isArray(details.dates) && details.dates.length > 1
+            ? details.dates.map((d) =>
+              <div className="flex" >
+            <div className="pr-2" >•</div>
+            <p>{d}</p>
+            </div>) : <p>{details.date}</p>}
+              
+          </div>
 
     </div>
   );

@@ -15,45 +15,34 @@ export default function Slider({ data }) {
     return (
         <>
             <div className="relative">
-                <p className='text-center text-black'>{data[currentIndex].taskName}</p>
-                <div className='flex'>
-                    <img
-                        src={data[currentIndex].image}
-                        alt={`Slide ${currentIndex + 1}`}
-                        className="h-48 mx-auto object-cover"
-                    />
-                    <p className="pt-3 pl-5  text-black bold ">
-                        {data[currentIndex].description}
-                    </p>
+                <p className='text-center text-black font-serif font-bold pb-2 italic'>{data[currentIndex].taskName}</p>
 
-                </div>
+                <img
+                    src={data[currentIndex].image}
+                    alt={`Slide ${currentIndex + 1}`}
+                    className="h-48 mx-auto"
+                />
+
                 <button
                     onClick={prevSlide}
-                    className="absolute top-1/2 -left-7 transform -translate-y-1/2 hover:bg-sky-400 bg-gray-500 text-white p-2 rounded-full"
+                    className="absolute top-2/4 -left-7 transform -translate-y-1/2 hover:bg-sky-400 bg-gray-500 text-white p-2 rounded-full"
                 >
                     ‹
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute top-1/2 -right-4 transform -translate-y-1/2 hover:bg-sky-400 bg-gray-500 text-white p-2 rounded-full"
+                    className="absolute top-2/4 -right-4 transform -translate-y-1/2 hover:bg-sky-400 bg-gray-500 text-white p-2 rounded-full"
                 >
                     ›
                 </button>
-                <div className="p-4 text-center">
+                <div className="py-2 text-center">
                     <p>{`Slide ${currentIndex + 1} of ${data.length}`}</p>
                 </div>
 
-                {/* <div className="pt-3">
-                    <ul className='pl-5 list-disc'>
-                        {data[currentIndex].content.map((j, index) => (
-                            <li key={index} className='text-sm'>{j}</li>
-                        ))}
-                    </ul>
-                </div> */}
+                {data[currentIndex].description
+                    ? <p className="pl-5 text-black bold ">{data[currentIndex].description}</p>
+                    : <p className="pl-5 text-black bold ">{'Description has not yet been added.'}</p>}
 
-                {/* <p className="pt-3 pl-5  text-black bold ">
-                    {data[currentIndex].description}
-                </p> */}
 
             </div>
 

@@ -40,7 +40,7 @@ function ShowMenuLinks() {
 function TopNaviBar() {
   return (
     <>
-      <nav className='flex justify-between items-center bg-primary px-4'>
+      <nav className='flex justify-between items-center bg-primary px-4 sh'>
         <p className="text-sm m-1 font-bold text-white">Marco A. Padilla</p>
         <ShowMenuLinks />
       </nav>
