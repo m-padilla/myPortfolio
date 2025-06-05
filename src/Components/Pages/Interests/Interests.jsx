@@ -29,30 +29,27 @@ function Interests() {
 
         <div className='text-white px-10 md:px-[100px] leading-7 text-xs'>
 
-          Hi, I'm Marco Padilla — a recent Computer Science graduate from California State University, Los Angeles (  <b className='font-bold bg-calstatela bg-400 text-transparent bg-clip-text animate-gradient'>Cal State LA </b>).
-          I'm a naturally curious person with a strong passion for technology and continuous learning. As a software engineer, I’m always exploring new ways to improve my skills and build impactful solutions.
+          Hi, I'm Marco Padilla — a recent Computer Science graduate from 
+          California State University, Los Angeles (  
+            <b className='font-bold bg-calstatela bg-400 text-transparent bg-clip-text animate-gradient'>
+              Cal State LA 
+              </b>).
+          I'm a naturally curious person with a strong passion for technology and continuous learning. 
+          As a software engineer, I’m always exploring new ways to improve my skills and build impactful 
+          solutions.
 
           <br />
           <br />
-          My main interest lies in frontend development, and I have hands-on experience with HTML, CSS, and JavaScript, along with frameworks and libraries like React and Tailwind CSS. I'm also familiar with Node.js for backend development, allowing me to contribute to full-stack projects when needed.
-
-
+          My main interest lies in frontend development, and I have hands-on experience with HTML, CSS, and
+           JavaScript, along with frameworks and libraries like React and Tailwind CSS. I'm also familiar 
+           with Node.js for backend development, allowing me to contribute to full-stack projects when 
+           needed.
           <br />
           <br />
-          I enjoy using code to solve real-world problems and help others through technology. Whether it’s through personal projects or collaborative work, I’m always eager to learn something new and grow as a developer.
+          I enjoy using code to solve real-world problems and help others through technology. Whether 
+          it’s through personal projects or collaborative work, I’m always eager to learn something 
+          new and grow as a developer.
 
-
-
-          {/* where I earned my Bachelor's degree in Computer Science. I'm a very curious person by nature and am always looking for
-          new ways to improve my skills as a software engineer.
-          <br /><br />
-          My main interest is in backend software engineering and I have professional experience in
-          Python and Java. I am also familiar with other languages as well as frameworks such as Spring Boot, React, and Flask.
-          I love using my skills and knowledge to help
-          others in ways that have real world impact.
-          <br /><br />
-          I'm passionate about both learning and teaching, and am almost
-          always working on a new project to expand my skillset. */}
         </div>
 
         <div className='px-16'>
