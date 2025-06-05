@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import Modal from '../../Details/Modal';
-import Slider from '../../Details/Slider';
+// import { useState } from 'react';
+// import Modal from '../../Details/Modal';
+// import Slider from '../../Details/Slider';
 
 import SectionHeading from '../SectionHeading';
 import DisplayDetailsCard from '../../../Components/Details/DisplayDetailsCard';
-import Footer from '../../Footer/Footer';
+// import Footer from '../../Footer/Footer';
 
 
 const projects = [
@@ -47,46 +47,46 @@ const projects = [
 
 function Projects() {
 
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
 
-  const [selectedProject, setSelectedProject] = useState(null);
+  // const [selectedProject, setSelectedProject] = useState(null);
 
-  const openModal = (project) => {
-    setSelectedProject(project);
-    setShowModal(true);
-  };
+  // const openModal = (project) => {
+  //   setSelectedProject(project);
+  //   setShowModal(true);
+  // };
 
   return (
-    <div className='pt-20 bg-primary font-mono'>
+    <div className='bg-primary font-mono'>
 
-      <SectionHeading text='Technical Projects' syling='text-white text-4xl' />
+      <SectionHeading id='projects' title='Technical Projects' styling='text-white text-4xl' />
 
       <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
 
         {projects.map((project, index) => (
           <>
-            <div
+            {/* <div
               key={index}
               role='button'
               onClick={() => openModal(project)}
               className='pb-3'
-            >
+            > */}
               <DisplayDetailsCard key={index} details={project} />
-            </div>
+            {/* </div> */}
 
 
-            {showModal && selectedProject && (
+            {/* {showModal && selectedProject && (
               <Modal show={showModal} onClose={() => setShowModal(false)}>
                 <Slider data={selectedProject.details} />
               </Modal>
-            )}
+            )} */}
           </>
         ))}
 
       </div>
 
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   )

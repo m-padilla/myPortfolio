@@ -1,21 +1,22 @@
-import { Route, Routes } from "react-router-dom"
-import TopNaviBar from "./Components/Header/TopNaviBar";
+import NavBar from "./Components/Header/NavBar.jsx"
 import About from './Components/Pages/About/About'
 import Work from './Components/Pages/Work/Work'
 import Projects from './Components/Pages/Projects/Projects'
 import Awards from "./Components/Pages/Awards/Awards";
+import Footer from "./Components/Footer/Footer.jsx";
 
 
 function App() {
   return (
     <div className="w-full h-screen bg-primary">
-      <TopNaviBar />
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/awards" element={<Awards />} />
-      </Routes>
+      <NavBar />
+
+      <About />
+      <Work />
+      <Projects />
+      <Awards />
+
+      <Footer/>
     </div>
   );
 }

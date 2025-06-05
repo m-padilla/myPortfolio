@@ -5,7 +5,7 @@ function DisplayDetailsCard({ details }) {
   return (
     <div className='bg-secondary shadow-lg w-60 mx-auto my-5 max-h-fit rounded-lg '>
 
-          {details.image ? <img src={details.image} className='rounded-t-xl w-[320px] ' alt={details.imageAlt} /> : null}
+          {details.image ? <img src={details.image} className='rounded-t-xl w-[320px] max-h-[200px]' alt={details.imageAlt} /> : null}
 
           {/* Heading/ Name of j */}
           <h3 className='font-bold mt-3 pl-2 text-white'>{details.name} </h3>

@@ -2,7 +2,6 @@ import SectionHeading from '../SectionHeading.js';
 import DisplayDetailsCard from '../../Details/DisplayDetailsCard.jsx';
 import Service_Lapel_Pin from '../../../assests/Service_Lapel_Pin.jpg'
 import Deans_Honor_List from '../../../assests/Deans_Honor_List.jpg'
-import Footer from '../../Footer/Footer.jsx';
 
 const awards = [
   {
@@ -37,8 +36,8 @@ const awards = [
 
 function Awards() {
   return (
-    <div className='pt-20 bg-primary font-mono '>
-      <SectionHeading text='Awards / Honors' syling='text-white text-4xl' />
+    <div className='bg-grey font-mono'>
+      <SectionHeading id="awards" title='Awards / Honors' styling='text-white text-4xl' />
 
       <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
 
@@ -46,12 +45,7 @@ function Awards() {
           <DisplayDetailsCard key={index} details={award}/>
         ))}
 
-      </div>
-
-      <div className='fixed bottom-0 w-full'>
-        <Footer />
-      </div>
-      
+      </div>      
     </div>
   )
 }

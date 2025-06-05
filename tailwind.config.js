@@ -8,6 +8,7 @@ module.exports = {
       colors:{
         primary: '#282c34',
         secondary: "#141414",
+        grey: "#1f2937",
       },
       backgroundImage: {
         calstatela: 'linear-gradient(90deg,  #f8fafc, #7928ca, #f8fafc, #7928ca, #f8fafc)',

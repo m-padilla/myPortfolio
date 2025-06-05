@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import Modal from '../../Details/Modal';
+// import { useState } from 'react';
+// import Modal from '../../Details/Modal';
 import SectionHeading from '../SectionHeading';
 import DisplayDetailsCard from '../../../Components/Details/DisplayDetailsCard';
 import we2link from '../../../assests/we2link_logo.png'
@@ -10,8 +10,8 @@ import duplicateContact from '../../../assests/duplicate contact modal.png'
 import mergeContacts from '../../../assests/merge contact modal.png'
 import dropDownLabels from '../../../assests/drop-down label menu.png'
 
-import Footer from '../../Footer/Footer'
-import Slider from '../../Details/Slider';
+// import Footer from '../../Footer/Footer'
+// import Slider from '../../Details/Slider';
 
 const work = [
   {
@@ -57,43 +57,43 @@ const work = [
 
 function Work() {
 
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
 
-  const [selectedJob, setSelectedJob] = useState(null);
+  // const [selectedJob, setSelectedJob] = useState(null);
 
-  function openModal(job) {
-    setShowModal(true)
-    setSelectedJob(job)
-  }
+  // function openModal(job) {
+  //   setShowModal(true)
+  //   setSelectedJob(job)
+  // }
 
 
   return (
-    <div className='pt-20 bg-primary font-mono'>
+    <div className='bg-grey font-mono'>
 
-      <SectionHeading text='Work Experience' syling='text-white text-4xl' />
+      <SectionHeading id='work' title='Work Experience' styling='text-white text-4xl' />
+
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
 
 
-      {work.map((job, index) => (
-        <div
-          key={index}
-          role='button'
-          onClick={() => openModal(job)}
-          className='pb-3'
-        >
+        {work.map((job, index) => (
+          // <div
+          //   key={index}
+          //   role='button'
+          //   onClick={() => openModal(job)}
+          //   className='pb-3'
+          // >
           <DisplayDetailsCard key={index} details={job} />
-        </div>
-      ))}
+          // </div>
+        ))}
 
 
-      {showModal && setSelectedJob && (
-        <Modal show={showModal} onClose={() => setShowModal(false)}>
-          <Slider data={selectedJob.details} />
-        </Modal>
+        {/* {showModal && setSelectedJob && (
+          <Modal show={showModal} onClose={() => setShowModal(false)}>
+            <Slider data={selectedJob.details} />
+          </Modal>
+        )} */}
 
-      )}
-
-      <Footer />
-
+      </div>
     </div>
   )
 }
