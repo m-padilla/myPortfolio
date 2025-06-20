@@ -1,19 +1,21 @@
 import NavBar from "./Components/Header/NavBar.jsx"
-import About from './Components/Pages/About/About'
+import ShowContentHeader from './Components/Header/ShowContentHeader.jsx'
+import About from './Components/Pages/Interests/About.jsx'
 import Work from './Components/Pages/Work/Work'
-import Projects from './Components/Pages/Projects/Projects'
+import Projects from './Components/Pages/Projects/Projects';
 import Awards from "./Components/Pages/Awards/Awards";
 import Footer from "./Components/Footer/Footer.jsx";
 
 
 function App() {
   return (
-    <div className="w-full h-screen bg-primary">
+    <div className="w-full h-screen bg-grey">
       <NavBar />
 
-      <About />
+      <ShowContentHeader /> 
+      <About/>
       <Work />
-      <Projects />
+      <Projects /> 
       <Awards />
 
       <Footer/>

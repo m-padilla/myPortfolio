@@ -3,8 +3,8 @@
 // import Slider from '../../Details/Slider';
 
 import SectionHeading from '../SectionHeading';
-import DisplayDetailsCard from '../../../Components/Details/DisplayDetailsCard';
-// import Footer from '../../Footer/Footer';
+import Card from '../../Details/Card.jsx'
+
 
 
 const projects = [
@@ -15,18 +15,16 @@ const projects = [
     date: 'June 2024- August 2024',
     details: [
       {
-        taskName: "Add Placeholder to Singleline textbox.",
-        image: 'https://www.skycitycasino.com/blog/wp-content/uploads/2020/02/SkyCity-Blog-Baccarat-1280x800.jpg',
-        description: "allow the user to create custom placeholders in single line textbox.",
+        taskName: "Baccarat after game starts",
+        image: 'https://github.com/user-attachments/assets/a744ecd6-2c29-4fc6-a859-8986d1ef7941',
+        description: "The user can select betting on the player, banker or tie. Once the user has made their decision, the scores of the player and banker will be displayed in the bottom square.",
 
       },
-      {
-        taskName: "Node.js implemetation.",
-        image: 'https://officialgamerules.org/wp-content/uploads/2025/02/image-367.jpeg',
-        description: "allow the user to select Player or Banker.",
 
-      },
-    ]
+    ],
+    image: "https://github.com/user-attachments/assets/61338c9b-ef9b-451f-b5d0-049808c05d79",
+    imageAlt: "Baccarat web app before start game is initiated.",
+    git: "https://github.com/m-padilla/Baccarat"
   },
   {
     name: 'Blackjack Web Game',
@@ -40,7 +38,10 @@ const projects = [
         description: "Refactored an existing component in order to allow the user to create custom placeholders in single line textbox.",
 
       },
-    ]
+    ],
+    image: "https://www.liveabout.com/thmb/pIJPZ5JF44uhPPlaxxGUT-ZO1Do=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-917034570-5ad2aea3642dca003605302b.jpg",
+    imageAlt: "Blackjack web app before start game is initiated.",
+    git: 'https://github.com/m-padilla/Blackjack'
   },
 ];
 
@@ -56,39 +57,47 @@ function Projects() {
   //   setShowModal(true);
   // };
 
+  function openTab(project) {
+    // setSelectedProject(project);
+    window.open(project.git)
+  }
+
   return (
-    <div className='bg-primary font-mono'>
-
-      <SectionHeading id='projects' title='Technical Projects' styling='text-white text-4xl' />
-
-      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
-
-        {projects.map((project, index) => (
-          <>
-            {/* <div
-              key={index}
-              role='button'
-              onClick={() => openModal(project)}
-              className='pb-3'
-            > */}
-              <DisplayDetailsCard key={index} details={project} />
-            {/* </div> */}
+    <SectionHeading id='projects' title='Technical Projects' styling='text-white text-4xl' >
+      <div className='bg-grey w-full font-mono'>
 
 
-            {/* {showModal && selectedProject && (
-              <Modal show={showModal} onClose={() => setShowModal(false)}>
-                <Slider data={selectedProject.details} />
-              </Modal>
-            )} */}
-          </>
-        ))}
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
+
+          {projects.map((project, index) => (
+            <div className="flex items-center justify-center">
+              <Card
+                key={index}
+                details={project}
+                btnText="Source Code"
+                onClick={()=> openTab(project)}
+              />
+            </div>
+          ))}
+
+
+
+          {/* {showModal && selectedProject && (
+          <Modal show={showModal} onClose={() => setShowModal(false)}>
+            <Slider data={selectedProject.details} />
+          </Modal>
+        )} */}
+
+          {/* {selectedProject && (
+            openTab(selectedProject.git)
+          )
+          } */}
+
+        </div>
 
       </div>
 
-
-      {/* <Footer /> */}
-
-    </div>
+    </SectionHeading>
   )
 }
 

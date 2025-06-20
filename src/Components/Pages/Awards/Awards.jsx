@@ -1,5 +1,5 @@
 import SectionHeading from '../SectionHeading.js';
-import DisplayDetailsCard from '../../Details/DisplayDetailsCard.jsx';
+import Card from '../../Details/Card.jsx';
 import Service_Lapel_Pin from '../../../assests/Service_Lapel_Pin.jpg'
 import Deans_Honor_List from '../../../assests/Deans_Honor_List.jpg'
 
@@ -36,17 +36,23 @@ const awards = [
 
 function Awards() {
   return (
-    <div className='bg-grey font-mono'>
-      <SectionHeading id="awards" title='Awards / Honors' styling='text-white text-4xl' />
+    <SectionHeading id="awards" title='Awards / Honors' styling='text-white text-4xl' >
+      <div className='bg-grey font-mono'>
 
-      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
 
-        {awards.map((award, index) => (
-          <DisplayDetailsCard key={index} details={award}/>
-        ))}
+          {awards.map((award, index) => (
+            <div className="flex items-center justify-center w-full  bg-grey">
+              <Card
+                key={index}
+                details={award}
+              />
+            </div>
+          ))}
 
-      </div>      
-    </div>
+        </div>
+      </div>
+    </SectionHeading>
   )
 }
 

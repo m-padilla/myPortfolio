@@ -16,7 +16,7 @@ function classNames(...classes) {
 
 export default function Example() {
     return (
-        <Disclosure as="nav" className="bg-gray-950 fixed w-full">
+        <Disclosure as="nav" className="bg-grey md:bg-transparent fixed w-full">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">

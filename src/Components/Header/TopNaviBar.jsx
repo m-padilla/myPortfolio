@@ -19,8 +19,7 @@ function TopNaviBar() {
 
 
   return (
-    <header 
-    // className='flex justify-between items-center bg-primary px-4 sh'
+    <header className='flex justify-between items-center bg-transparent px-4 sh'
     >
       {/* logo Part */}
       <h2 

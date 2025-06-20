@@ -1,7 +1,8 @@
-import Interest from "../Interests/Interests"
-import profileImg from "../../../assests/resized-profile-pic.jpg"
+import profileImg from "../../assests/resized-profile-pic.jpg"
 import { TypeAnimation } from "react-type-animation";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../Pages/SectionHeading";
+
+import ShowSocials from "../Details/Socials";
 
 function ShowContentsHeader() {
   const content = [
@@ -9,12 +10,12 @@ function ShowContentsHeader() {
       id: 1,
       line: "A recent graduate from CalState LA, I am an aspiring software engineer",
       photo: profileImg,
-      altImg:"Marco Padilla Profile Picture."
+      altImg: "Marco Padilla Profile Picture."
     },
   ];
 
   return (
-    <div className="bg-grey w-screen">
+    <div className="bg-grey w-full">
       {content.map((i, index) => (
         // page1_showcontents
         <div className="sm:flex p-7">
@@ -47,6 +48,13 @@ function ShowContentsHeader() {
             <div key={index} className="text-white">
               {i.line}
             </div>
+
+
+            <div className='flex justify-center pt-7'>
+                <ShowSocials />
+            </div>
+
+
           </div>
         </div>
       ))}
@@ -56,12 +64,9 @@ function ShowContentsHeader() {
 
 function Header() {
   return (
-    <div>
-      <SectionHeading id='home'/>
+    <SectionHeading id='home'>
       <ShowContentsHeader />
-      <Interest />
-
-    </div>
+    </SectionHeading>
   );
 }
 

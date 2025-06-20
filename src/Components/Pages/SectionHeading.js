@@ -1,26 +1,22 @@
 
-function SectionHeading({ title, id, styling }) {
+function SectionHeading({ title, id, styling, children }) {
   return (
-    <section 
-    id={ id }
-    className='py-10 text-center w-screen font-sans'>
+    <section
+      id={id}
+      className='py-10 text-center w-full min-h-full font-sans bg-grey'>
 
-      <h2 
-      className={ styling ? styling : null }
+      <h2
+        className={styling ? styling : null}
       >
-        <b>{ title ? title : null }</b>
+        <b>{title ? title : null}</b>
       </h2>
+
+      <div className= 'py-10'>
+        {children}
+
+      </div>
+
     </section>
-
-    // <section
-    //   id={id}
-    //   className={`h-screen flex items-center justify-center`}
-    // >
-    //   <h2 className={`text-4xl font-bold text-white ${ styling }`}>{title}</h2>
-    // </section>
-
-
-
   );
 }
 
