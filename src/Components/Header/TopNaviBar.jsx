@@ -1,22 +1,39 @@
+import { useRef } from "react";
 import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-function ShowMenuLinks() {
-  const menulinkslist = [
-      {name:'About Me',id:'/'},
-      {name:'Work Experience', id:'/work'},
-      {name:'Technical Projects',id:'/projects'},
-      {name:'Awards',id:'/awards'},
-    ];
 
-    return (
-      <div className="flex">
+function TopNaviBar() {
+    const menulinkslist = [
+    { name: 'About Me', link: '/' },
+    { name: 'Work Experience', link: '/work' },
+    { name: 'Technical Projects', link: '/projects' },
+    { name: 'Awards', link: '/awards' },
+  ];
+
+  const navRef = useRef()
+
+  function showNavBar () {
+    navRef.current.classList.toggle("responsive_nav");
+  }
+
+
+  return (
+    <header className='flex justify-between items-center bg-transparent px-4 sh'
+    >
+      {/* logo Part */}
+      <h2 
+      // className="text-sm m-1 font-bold text-white"
+      >Marco A. Padilla</h2>
+      {/* Navigation Part */}
+      <div 
+      className="flex"
+      >
         {menulinkslist.map(item => (
           <ul>
-            <NavLink to={item.id}>
-              <li className="list-none block text-white p-2 mx-2 rounded-lg hover:bg-sky-400 hover:text-white">
-                {item.name}
+            <li className="list-none block text-white p-2 mx-2 rounded-lg hover:bg-sky-400 hover:text-white">
+              <NavLink to={item.id}>{item.name}</NavLink>
               </li>
-              </NavLink>
           </ul>
           
         ))}

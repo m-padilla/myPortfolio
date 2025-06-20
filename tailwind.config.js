@@ -8,9 +8,11 @@ module.exports = {
       colors:{
         primary: '#282c34',
         secondary: "#141414",
+        grey: "#1f2937",
       },
       backgroundImage: {
-        calstatela: 'linear-gradient(90deg, #eab308, #f8fafc, #eab308, #f8fafc)',
+        calstatela: 'linear-gradient(90deg,  #f8fafc, #7928ca, #f8fafc, #7928ca, #f8fafc)',
+        header: 'linear-gradient(90deg,  #0284c7, #0ea5e9, #38bdf8, #7dd3fc)'
       },
       backgroundSize:{
         400: "400%"

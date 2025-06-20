@@ -1,39 +1,59 @@
 import SectionHeading from '../SectionHeading';
-import DisplayDetailsCard from '../../../Components/Details/DisplayDetailsCard';
 import we2link from '../../../assests/we2link_logo.png'
 
-import Footer from '../../Footer/Footer'
+import Card from '../../Details/Card.jsx';
 
-  const work = [
-    {
-      name:'We2Link',
-      description:'Software Engineer Intern',
-      technologies:'HTML, CSS, Tailwind CSS, JavaScript, React, Firebase',
-      date:'August 2024 - May 2025',
-      content:[
-        'Developed a full-stack application with React.js and Firebase to enhance memory management for users with cognitive impairments by helping them efficiently organize memories, passwords, contacts, and daily tasks.',
-        'Engineered a detect-duplicate-contacts and merge feature by creating multiple onCall cloud functions that grouped duplicate contacts base on same phonenumber or email, enabling users to selectively merge and retain relevant contacts.'
-      ],
-      image: we2link,
-      imageAlt: 'we2link logo'
-    }
-  ];
+const work = [
+  {
+    name: 'We2Link',
+    description: 'Junior Software Developer',
+    technologies: 'HTML, CSS, Tailwind CSS, JavaScript, React, Firebase',
+    date: 'August 2024 - May 2025',
+    image: we2link,
+    imageAlt: 'we2link logo',
+    details: [
+      {
+        description: "Lore",
+
+      }
+
+    ],
+
+  }
+];
+
 
 function Work() {
+
   return (
-    <div className='pt-20 bg-primary font-mono'>
+    <SectionHeading id='work' title='Work Experience' styling='text-white text-4xl' >
+      <div className='bg-grey w-full font-mono'>
 
-      <div className='text-white'>
 
-        <SectionHeading text='Work Experience' syling='text-white text-4xl' />
-        <DisplayDetailsCard details= { work } />
-        <Footer/>
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
+        
+        {work.map((job, index) => (
+          <div className="flex items-center justify-center w-screen  bg-grey">
+            <Card
+              key= {index}
+              details= {job}
+              btnText="More Details"
+              // onClick={() => openModal(job)}
+            />
+          </div>
+        ))}
+
+        {/* {showModal && setSelectedJob && (
+          <Modal show={showModal} onClose={() => setShowModal(false)}>
+            <Slider data={selectedJob.details} />
+          </Modal>
+        )} */}
 
       </div>
+      </div>
+      </SectionHeading>
+      )
+} 
 
-    </div>
-  )
-}
 
-
-export default Work;
+      export default Work;

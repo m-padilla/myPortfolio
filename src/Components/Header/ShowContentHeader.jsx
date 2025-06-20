@@ -1,28 +1,29 @@
-import HomeImage from "../../../assests/placeholderimage.jpg";
-import Resume from "../../../assests/Resume_updated.pdf";
-import Interest from "../Interests/Interests"
-import { ImProfile } from "react-icons/im";
-
+import profileImg from "../../assests/resized-profile-pic.jpg"
 import { TypeAnimation } from "react-type-animation";
+import SectionHeading from "../Pages/SectionHeading";
+
+import ShowSocials from "../Details/Socials";
 
 function ShowContentsHeader() {
   const content = [
     {
-      line: "Currently a graduate from CalState LA, I am an aspiring software engineer",
-      photo: HomeImage,
+      id: 1,
+      line: "A recent graduate from CalState LA, I am an aspiring software engineer",
+      photo: profileImg,
+      altImg: "Marco Padilla Profile Picture."
     },
   ];
 
   return (
-    <div className="bg-gray-800 w-screen">
-      {content.map((i) => (
+    <div className="bg-grey w-full">
+      {content.map((i, index) => (
         // page1_showcontents
-        <div className="flex relative p-7">
-          <div className="w-1/2">
-            <img className="" src={i.photo} alt="ImagePlaceholder" />
+        <div className="sm:flex p-7">
+          <div className="sm:w-1/2 pb-5">
+            <img className="rounded-2xl" src={i.photo} alt={i.altImg ? i.altImg : "Image Placeholder"} />
           </div>
 
-          <div className="w-1/2 text-center m-auto">
+          <div className="sm:w-1/2 text-center m-auto">
             <TypeAnimation
               sequence={[
                 'System.out.println("Hello, I\'m Marco");',
@@ -44,9 +45,16 @@ function ShowContentsHeader() {
               repeat={Infinity}
             />
 
-            <div className="page1_showcontents_line2 text-white fs1">
+            <div key={index} className="text-white">
               {i.line}
             </div>
+
+
+            <div className='flex justify-center pt-7'>
+                <ShowSocials />
+            </div>
+
+
           </div>
         </div>
       ))}
@@ -56,12 +64,9 @@ function ShowContentsHeader() {
 
 function Header() {
   return (
-    <div>
-
+    <SectionHeading id='home'>
       <ShowContentsHeader />
-      <Interest />
-
-    </div>
+    </SectionHeading>
   );
 }
 

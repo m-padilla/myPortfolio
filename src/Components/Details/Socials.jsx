@@ -25,7 +25,7 @@ function ShowSocials({ isFooter= false}) {
   ];
 
   return (
-    <div className={`${isFooter ? 'flex gap-5 justify-center flex-wrap' : 'flex gap-5 flex-wrap'}`}>
+    <div className={`${isFooter ? 'flex gap-5 justify-center flex-wrap' : ' px-auto flex gap-5 flex-wrap'}`}>
       {s.map((i) => (
         <a href={i.link} target="_blank" rel="noopener noreferrer" 
         className="flex flex-col items-center text-white text-sm pt-3 hover:text-sky-400 hover:text-lg">
