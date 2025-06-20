@@ -30,38 +30,26 @@ function TopNaviBar() {
       className="flex"
       >
         {menulinkslist.map(item => (
-          // <a href={item.link}>{item.name}</a>
-          <NavLink
-            ref={navRef}
-            to={item.link}
-          // className={({ isActive }) => {
-          //   return (
-          //     (isActive ? 'list-none block font-bold bg-calstatela bg-400 text-transparent bg-clip-text animate-gradient' : 'text-white bg-primary')
-          //   )
-
-          // }}
-          >
-            <ul>
-              <li 
-              className="p-2 mx-2 font-bold"
-              >
-                {item.name}
+          <ul>
+            <li className="list-none block text-white p-2 mx-2 rounded-lg hover:bg-sky-400 hover:text-white">
+              <NavLink to={item.id}>{item.name}</NavLink>
               </li>
-            </ul>
-          </NavLink>
+          </ul>
+          
         ))}
-        <button onClick={showNavBar}>
-          <FaTimes />
-        </button>
+      </div>
+    )
+}
 
-      </div >
-
-      <button onClick={showNavBar}>
-        <FaBars />
-      </button>
-    </header>
-
-  )
+function TopNaviBar(){
+    return(
+        <>
+            <nav className='flex justify-between items-center bg-primary px-4'>
+              <p className="text-sm m-1 font-bold text-white">Marco A. Padilla</p>
+              <ShowMenuLinks />
+            </nav>
+        </>
+    )
 }
 
 export default TopNaviBar;
