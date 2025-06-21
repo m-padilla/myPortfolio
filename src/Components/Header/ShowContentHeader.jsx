@@ -1,15 +1,14 @@
-import profileImg from "../../assests/resized-profile-pic.jpg"
 import { TypeAnimation } from "react-type-animation";
 import SectionHeading from "../Pages/SectionHeading";
+
+import { getImageUrl } from "../../utils.js"
 
 import ShowSocials from "../Details/Socials";
 
 function ShowContentsHeader() {
   const content = [
     {
-      id: 1,
       line: "A recent graduate from CalState LA, I am an aspiring software engineer",
-      photo: profileImg,
       altImg: "Marco Padilla Profile Picture."
     },
   ];
@@ -20,7 +19,7 @@ function ShowContentsHeader() {
         // page1_showcontents
         <div className="sm:flex p-7">
           <div className="sm:w-1/2 pb-5">
-            <img className="rounded-2xl" src={i.photo} alt={i.altImg ? i.altImg : "Image Placeholder"} />
+            <img className="rounded-2xl" src={getImageUrl('hero/resized-profile-pic.jpg')} alt={i.altImg ? i.altImg : "Image Placeholder"} />
           </div>
 
           <div className="sm:w-1/2 text-center m-auto">

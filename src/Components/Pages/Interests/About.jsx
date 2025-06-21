@@ -1,20 +1,48 @@
-import ShowSocials from '../.././Details/Socials'
 import SectionHeading from '../SectionHeading';
-
+import skills from '../../../data/skills.json'
+import { getImageUrl } from '../../../utils';
 
 function ShowSkills() {
 
-  const s = ['Python', 'Java', 'JavaScript', 'React',
-    'HTML', 'CSS', 'BootStrap', 'Tailwind CSS', 'MySQL', 'Git', 'C++'];
-
   return (
-    <div>
-      {s.map(i => (
-        <button
-          className='hover:cursor-default inline-block px-7 leading-7 mr-1 mb-1 rounded-md bg-black  text-white transition-all duration-[0.2s] ease-in-out delay-0 transition-normal text-sm '>
-          {i}
-        </button>
-      ))}
+    // section part (container)
+    <div className='text-white mt-[29px]'>
+
+      {/* heading part (title) */}
+      <h2 className='text-lg font-bold tracking-[1.75px] uppercase'>Technologies and Tools I am familiar with:</h2>
+
+      {/* content */}
+      <div className='flex flex-row justify-evenly mt-4'>
+
+        {/*skills */}
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
+
+          {skills.map((skill, id) => {
+            return <div 
+            key={id}
+            className='flex flex-col items-center gap-3'
+            >
+              {/* image display */}
+              <div 
+              className='bg-navy_blue rounded-full flex items-center justify-center w-[120px] h-[120px]'
+              >
+                <img
+                  src={getImageUrl(skill.imageSrc)}
+                  alt={skill.title}
+                  className='w-[75px]'
+                />
+              </div>
+
+              {/* Title display */}
+              <p
+              className="text-xl font-medium"
+              >
+                {skill.title}
+              </p>
+            </div>
+          })}
+        </div>
+      </div>
     </div>
   )
 }
@@ -22,7 +50,7 @@ function ShowSkills() {
 
 function Introduction() {
   return (
-    <div className='text-white px-10 md:px-[100px] leading-7 text-xs'>
+    <div className='text-white mt-[29px] px-10 md:px-[100px] leading-7 text-md'>
 
       Hi, I'm Marco Padilla — a recent Computer Science graduate from
       California State University, Los Angeles (
@@ -59,9 +87,6 @@ function About() {
 
 
           <div className='px-16'>
-            <div className='pb-3 text-white text-sm'>
-              <b>Technologies and Tools I am familiar with:</b>
-            </div>
             <ShowSkills />
           </div>
 

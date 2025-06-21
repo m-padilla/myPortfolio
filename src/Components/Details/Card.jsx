@@ -1,17 +1,31 @@
-import React from 'react';
+
+import { getImageUrl } from '../../utils';
 
 const Card = ({ details, onClick, btnText }) => {
 
     return (
         <div className="relative w-60 h-60 overflow-hidden rounded-xl shadow-lg group">
-            <img
-                src={details.image}
-                alt={details.imageAlt}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
+
+            {details.image ?
+                <img
+                    src={getImageUrl(details.image)}
+                    alt={details.imageAlt}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                :
+
+                <img
+                    src={details.src}
+                    alt={details.imageAlt}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+
+
+            }
+
             <div className="absolute bottom-14 left-0 h-full w-full bg-black bg-opacity-70 text-white p-4 transform translate-y-full group-hover:translate-y-14 transition-transform duration-300 ease-in-out">
                 <h3 className="text-lg font-semibold pb-3 text-nowrap">{details.name}</h3>
-                 <p className="text-sm mt-1">{details.description}</p>
+                <p className="text-sm mt-1">{details.description}</p>
                 {details.technologies ? <p className='italic pr-4'>{details.technologies}</p> : null}
                 {details.institution ? <p className='italic pr-4' >{details.institution}</p> : null}
 
@@ -37,5 +51,4 @@ const Card = ({ details, onClick, btnText }) => {
         </div>
     );
 };
-
 export default Card;

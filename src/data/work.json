@@ -1,0 +1,16 @@
+
+[
+  {
+    "name": "We2Link",
+    "description": "Junior Software Developer",
+    "technologies": "HTML, CSS, Tailwind CSS, JavaScript, React, Firebase",
+    "date": "August 2024 - May 2025",
+    "image": "work/we2link_logo.png",
+    "imageAlt": "we2link logo",
+    "details": [
+      {
+        "description": "Lore"
+      }
+    ]
+  }
+]

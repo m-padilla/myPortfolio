@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Cum Laude",
+    "description": "Baccalaureate Honors",
+    "institution": "California State University Los Angeles",
+    "date": "May 2025",
+    "src": "https://ung.edu/commencement/_uploads/images/cum-laude.jpg",
+    "imageAlt": "Golden Honor Cords: Cum Laude"
+  },
+  {
+    "name": "Full Time Dean's Honor List",
+    "description": "Academic Honors",
+    "institution": "Los Angeles Southwest College",
+    "dates": [
+      "Fall 2015",
+      "Spring 2016"
+    ],
+    "image": "awards/Deans_Honor_List.jpg",
+    "imageAlt": "Certificate for the Dean's Honor List"
+  },
+  {
+    "name": "Community Service",
+    "description": "Award for Contribution of Volunteer work",
+    "institution": "John C. Fremont High School",
+    "date": "May 2012",
+    "image": "awards/Service_Lapel_Pin.jpg",
+    "imageAlt": "bronze Lapel Pin with the word Service written on it"
+  }
+]

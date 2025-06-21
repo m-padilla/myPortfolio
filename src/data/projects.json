@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Baccarat Web Game",
+    "description": "Utilizing the Deck of Cards API, created a simple card game,",
+    "technologies": "Node.js, Express.js, MongoDB, Axios",
+    "date": "June 2024- August 2024",
+    "details": [
+      {
+        "taskName": "Baccarat after game starts",
+        "mage": "https://github.com/user-attachments/assets/a744ecd6-2c29-4fc6-a859-8986d1ef7941",
+        "description": "The user can select betting on the player, banker or tie. Once the user has made their decision, the scores of the player and banker will be displayed in the bottom square."
+
+      }
+    ],
+    "src": "https://github.com/user-attachments/assets/61338c9b-ef9b-451f-b5d0-049808c05d79",
+    "imageAlt": "Baccarat web app before start game is initiated",
+    "git": "https://github.com/m-padilla/Baccarat"
+  },
+  {
+    "name": "Blackjack Web Game",
+    "description": "Utilizing the Deck of Cards API, created a simple card game,",
+    "technologies": "Node.js, Express.js, MongoDB, Axios",
+    "date": "June 2024- August 2024",
+    "details": [
+      {
+        "taskName": "Add Placeholder to Singleline textbox.",
+        "src": "https://www.liveabout.com/thmb/pIJPZ5JF44uhPPlaxxGUT-ZO1Do=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-917034570-5ad2aea3642dca003605302b.jpg",
+        "description": "Refactored an existing component in order to allow the user to create custom placeholders in single line textbox."
+      }
+    ],
+    "src": "https://github.com/user-attachments/assets/d7de7ad4-87cc-4dec-ad0a-7e7f18929917",
+    "imageAlt": "Blackjack web app before start game is initiated.",
+    "git": "https://github.com/m-padilla/Blackjack"
+  }
+]

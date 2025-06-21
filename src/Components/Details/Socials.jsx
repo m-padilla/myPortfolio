@@ -1,8 +1,9 @@
-import Resume from '../../assests/Resume_updated.pdf';
+
 import { ImProfile } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
+import Resume from './Resume_updated.pdf'
 
 function ShowSocials({ isFooter= false}) {
 
