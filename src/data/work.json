@@ -1,16 +1,69 @@
-
 [
   {
+    "category": "Work",
     "name": "We2Link",
-    "description": "Junior Software Developer",
-    "technologies": "HTML, CSS, Tailwind CSS, JavaScript, React, Firebase",
+    "role": "Junior Software Developer",
+    "description": "Collaborated on a 3-member sub-team to refactor and enhance an existing website, including developing a custom drop-down category menu that allowed users to create and store personalized contact categories",
+    "technologies": [
+      {
+        "title": "React.js",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+      },
+      {
+        "title": "Typescript",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+      },
+      {
+        "title": "Tailwind CSS",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+      },
+      {
+        "title": "JavaScript",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+      },
+      {
+        "title": "Firebase",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+      },
+      {
+        "title": "Jira",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
+      },
+      {
+        "title": "Github",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+      },
+      {
+        "title": "HTML",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+      },
+      {
+        "title": "CSS",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+      }
+    ],
     "date": "August 2024 - May 2025",
     "image": "work/we2link_logo.png",
     "imageAlt": "we2link logo",
-    "details": [
-      {
-        "description": "Lore"
-      }
-    ]
+    "details": {
+      "description": "We2Link is a medical web application built to support individuals with memory impairments. It helps users keep track of important events, organize contact information, and maintain direct communication with caregivers, all in one accessible platform.",
+      "type": "Medical Plateform",
+      "url": "https://www.want2remember.com/",
+      "explination": [
+        {
+          "heading": "Project Purpose and Goal",
+          "paragraph": "As part of my capstone project, I worked on a team of 11 members that was divided into mobile and web development groups. I was placed on the web team, composed of three developers,<strong> where we were responsible for refactoring the existing platform and implementing new features to improve functionality and user experience.</strong>"
+        },
+        {
+          "heading": "Roles and Tasks",
+          "paragraph": "During my time at We2Link, our web team was assigned four major development responsibilities. The first task involved <strong>integrating Tailwind CSS</strong> throughout the application. This required refactoring the existing styling by replacing traditional CSS with Tailwind utility classes, ensuring consistency and improving maintainability across the entire codebase. <br/><br/> For the second task, we <strong>developed a feature that allowed users to create personalized placeholder text</strong> within custom templates. This enhancement provided greater flexibility, enabling users to define their own placeholder content instead of relying on fixed defaults. <br/><br/>The third task focused on <strong>implementing a contact merge mechanism capable of detecting duplicate contact entries</strong>. We built a system that allowed users to review overlapping information and consolidate records into a single, accurate master contact, helping maintain clean and organized data. <br/><br/>Finally, we improved the user experience on the contacts page by <strong>developing a dropdown label system</strong> for phone numbers, emails, and addresses. Instead of retyping labels manually, users could save and reuse custom labels, stored in a set preventing duplicates and streamlining data entry. This replaced the previous single-line input method and added a more efficient, user-friendly workflow."
+        },
+        {
+          "heading": "Problems and Thought Process",
+          "paragraph": "Throughout this project, I encountered several challenges—one of the biggest being my limited familiarity with React.js. Fortunately, the project sponsor provided Udemy courses for our team, which helped me quickly, builds a foundational understanding of React and continue contributing to the project.<br/> <br/>The third task, involving contact merging with backend integration (Firebase), pushed me far outside my comfort zone. Knowing that backend development wasn’t my strong suit, I focused on leveraging my strengths in frontend development. I contributed primarily to the UI and user experience while actively participating in team discussions to stay aligned with the feature requirements. <strong>Although I still consider backend development an area for growth, this experience gave me the confidence to approach it in future projects.</strong> <br/><br/>I gained the most growth during the final task, where I took the lead. With guidance from our senior developer, I learned how to properly request and send data to the backend. After understanding the data flow, I designed and implemented the dropdown label feature, which retrieved existing labels from the database and allowed users to create and save new custom labels. <strong>This task strengthened my understanding of frontend-to-backend integration and significantly boosted my confidence as a developer.</strong>"
+        }
+      ]
+    },
+    "git": "https://github.com/m-padilla/CS4962-BSCS-CSULA-CapStone"
   }
 ]

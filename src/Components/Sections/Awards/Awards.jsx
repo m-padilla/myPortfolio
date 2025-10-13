@@ -5,15 +5,16 @@ import awards from '../../../data/awards.json'
 
 function Awards() {
   return (
-    <SectionHeading id="awards" title='Awards / Honors' styling='text-white text-4xl' >
+    <SectionHeading id="awards" title='Awards / Honors' styling='text-white bg-grey text-4xl' >
       <div className='bg-grey w-full font-mono'>
 
         <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit'>
 
-          {awards.map((award, index) => (
-            <div className="flex items-center justify-center py-5">
+          {awards.map((award) => (
+            <div className="flex items-center justify-center py-5"
+            key={award.name}>
               <Card
-                key={index}
+                key={award.name}
                 details={award}
               />
             </div>

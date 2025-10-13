@@ -11,10 +11,7 @@
     "name": "Full Time Dean's Honor List",
     "description": "Academic Honors",
     "institution": "Los Angeles Southwest College",
-    "dates": [
-      "Fall 2015",
-      "Spring 2016"
-    ],
+    "date": "Spring 2016",
     "image": "awards/Deans_Honor_List.jpg",
     "imageAlt": "Certificate for the Dean's Honor List"
   },

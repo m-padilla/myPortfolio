@@ -1,25 +1,18 @@
-import NavBar from "./Components/Header/NavBar.jsx"
-import ShowContentHeader from './Components/Header/ShowContentHeader.jsx'
-import About from './Components/Pages/Interests/About.jsx'
-import Work from './Components/Pages/Work/Work'
-import Projects from './Components/Pages/Projects/Projects';
-import Awards from "./Components/Pages/Awards/Awards";
-import Footer from "./Components/Footer/Footer.jsx";
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from "./Components/Pages/HomePage.jsx";
+import AboutMe from './Components/Pages/AboutMe.jsx'
+import ProjectDetails from './Components/Pages/ProjectDetails.jsx';
 
 function App() {
   return (
-    <div className="w-full h-screen bg-grey">
-      <NavBar />
-
-      <ShowContentHeader /> 
-      <About/>
-      <Work />
-      <Projects /> 
-      <Awards />
-
-      <Footer/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<HomePage/>}/>
+    <Route path="/about" element={<AboutMe/>}/>
+    <Route path="/work/:name" element={<ProjectDetails/>}/>
+    <Route path="/project/:name" element={<ProjectDetails/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

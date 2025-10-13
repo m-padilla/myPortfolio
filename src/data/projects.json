@@ -1,33 +1,106 @@
 [
   {
-    "name": "Baccarat Web Game",
-    "description": "Utilizing the Deck of Cards API, created a simple card game,",
-    "technologies": "Node.js, Express.js, MongoDB, Axios",
-    "date": "June 2024- August 2024",
-    "details": [
+    "category": "project",
+    "name": "Dessert Shopping Cart",
+    "role": "Personal Project",
+    "description": "I took on the challenge to build a product list project that includes a functional cart.",
+    "technologies": [
       {
-        "taskName": "Baccarat after game starts",
-        "mage": "https://github.com/user-attachments/assets/a744ecd6-2c29-4fc6-a859-8986d1ef7941",
-        "description": "The user can select betting on the player, banker or tie. Once the user has made their decision, the scores of the player and banker will be displayed in the bottom square."
-
+        "title": "React.js",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+      },
+      {
+        "title": "Typescript",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+      },
+      {
+        "title": "Tailwind CSS",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+      },
+      {
+        "title": "Node.js",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+      },
+      {
+        "title": "Express.js",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+      },
+      {
+        "title": "MongoDB",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+      },
+      {
+        "title": "Github",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
       }
     ],
-    "src": "https://github.com/user-attachments/assets/61338c9b-ef9b-451f-b5d0-049808c05d79",
-    "imageAlt": "Baccarat web app before start game is initiated",
-    "git": "https://github.com/m-padilla/Baccarat"
+    "date": "September 2025- October 2025",
+    "src": "https://github.com/user-attachments/assets/c504e229-cae9-4e28-ac6a-556ec36df909",
+    "imageAlt": "Product page of desserts and a shopping cart.",
+    "details": {
+      "description": "This is my attempt at the <a href=\"https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:text-orange-600 hover:underline\"><strong>Product List with Cart</strong></a> Frontend Challenge.",
+      "type": "Personal Project",
+      "url": "https://dessert-shopping-cart.onrender.com/",
+      "explination": [
+        {
+          "heading": "Project Purpose and Goal",
+          "paragraph": "I took on this challenge to continue to hone my skills. I wanted to test myself to see if I could utilize all of the techniques that I've gained thus far."
+        },
+        {
+          "heading": "Web Stack and Explaination",
+          "paragraph": "I decided to use <strong>React.js</strong> so I can get more practice with it as well as <strong>Typescript</strong>. At this point, I am the most comfortable with <strong>Tailwind Css</strong> so I added it the this project. Here is the big challenge I made for myself, I added a backend to this project. I went with <strong>MERN stack</strong> since I learned it in school so I am somewhat familiar with it. I also added <a href=\"https://cloudinary.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline italic hover:text-orange-600 hover:underline\"><strong>Cloudinary</strong></a> for managing the dessert images. I also deployed this project on <strong>Render.com</strong>, mainly because I sperated the frontend and the backend and I know that Render.com has options for a Static Site and also a Web Service for the backend."
+        },
+        {
+          "heading": "Problems and Thought Process",
+          "paragraph": "This was my first ever full stack project that I started from scratch. One of the issues that I came across was creating a function that would upload the image asset to Cloudinary, store the secure url in a varible that would then be uploaded to MongoDB where all the dessert data will be stored. I was able to solve this issue by using a async and await function to first upload the image to Cloudinary and then add the secure url to the dessert Mongoose Model to upload the data to MongoDB.<br/><br/> I can see that I still have room for improvement but, I am happy how this project turned out. Now to tackle user auth and login project. "
+        }
+      ]
+    },
+    "git": "https://github.com/m-padilla/Dessert-Shopping-Cart/tree/main"
   },
   {
+    "category": "project",
     "name": "Blackjack Web Game",
-    "description": "Utilizing the Deck of Cards API, created a simple card game,",
-    "technologies": "Node.js, Express.js, MongoDB, Axios",
-    "date": "June 2024- August 2024",
-    "details": [
+    "role": "Personal Project",
+    "description": "Play a simple game of Blackjack. The one who is closest to 21 with out going over WINS!",
+    "technologies": [
       {
-        "taskName": "Add Placeholder to Singleline textbox.",
-        "src": "https://www.liveabout.com/thmb/pIJPZ5JF44uhPPlaxxGUT-ZO1Do=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-917034570-5ad2aea3642dca003605302b.jpg",
-        "description": "Refactored an existing component in order to allow the user to create custom placeholders in single line textbox."
+        "title": "Node.js",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+      },
+      {
+        "title": "Express.js",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+      },
+      {
+        "title": "MongoDB",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+      },
+      {
+        "title": "Axios",
+        "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg"
       }
     ],
+    "date": "June 2024- August 2024",
+    "details": {
+      "description": "Have a little fun play a simple game of Blackjack.",
+      "type": "Personal Project",
+      
+      "explination": [
+        {
+          "heading": "Project Purpose and Goal",
+          "paragraph": "After taking the course of (CS 4220 - Current Trends in Web Design and Development), I wanted to test myself in seeing if I could build a Node.js/ Express.js project on my own.<br/><br/>My end goal was recreate the Blackjack game."
+        },
+        {
+          "heading": "Web Stack and Explaination",
+          "paragraph": "In class, we recreated the game of Poker so I used that as a guide. I used Node.js, Express.js for the application. I also use MongoDB for the database to store results of each game. Lastly, I used Axios for http requesting. <br/><br/> I also use the Deck of Card API to get card data."
+        },
+        {
+          "heading": "Problems and Thought Process",
+          "paragraph": "One of the problems I came across was the feature to sum up the values of each card since the face card do not have a numerical value (according to the api), this issue is worse in the case if the Ace card. The way I was able to solve these issues was to essentially develop a function that accepts a card's value, if the card's value is not numerical change it to numerical."
+        }
+      ]
+    },
     "src": "https://github.com/user-attachments/assets/d7de7ad4-87cc-4dec-ad0a-7e7f18929917",
     "imageAlt": "Blackjack web app before start game is initiated.",
     "git": "https://github.com/m-padilla/Blackjack"

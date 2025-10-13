@@ -31,7 +31,7 @@ const Card = ({ details, onClick, btnText }) => {
 
                 {Array.isArray(details.dates) && details.dates.length > 1
                     ? details.dates.map((d) =>
-                        <div className="flex" >
+                        <div className="flex" key={d}>
                             <div className="pr-2" >•</div>
                             <p>{d}</p>
                         </div>) : <p>{details.date}</p>}
