@@ -54,6 +54,7 @@ function ProjectDetails() {
               >
                 <img
                   src={tech.imageSrc}
+                  alt={tech.name}
                   className='h-6 aspect-square'
                 />
                 <p className='pl-3'>{tech.title}
@@ -82,6 +83,7 @@ function ProjectDetails() {
             <h3 className='pb-3 text-xl font-bold'>Code</h3>
             <a
               target="_blank"
+              rel="noreferrer"
               href={item.git && item.git}
               className='hover:text-orange-600 hover:underline'
             >Github</a>
@@ -92,6 +94,7 @@ function ProjectDetails() {
               <h3 className='pb-3 text-xl font-bold'>Live</h3>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href={item.details.url}
                 className='hover:text-orange-600 hover:underline'
               >Site</a>

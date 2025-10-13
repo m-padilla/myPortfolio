@@ -3,7 +3,6 @@ import SectionContentHeader from "../Header/ShowContentHeader";
 import Interests from '../Sections/Interests/About'
 import Works from "../Sections/Work/Work"
 import Projects from "../Sections/Projects/Projects"
-import Awards from "../Sections/Awards/Awards"
 import Footer from '../Footer/Footer'
 
 
@@ -16,8 +15,6 @@ function HomePage() {
             <Interests/>
             <Works/>
             <Projects/>
-            {/* <Awards/> */}
-
             <Footer/>
         </div>
     )

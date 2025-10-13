@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import SectionHeading from '../SectionHeading';
 import skills from '../../../data/skills.json'
 import { getImageUrl } from '../../../utils';
@@ -66,8 +65,6 @@ function Introduction() {
 }
 
 function About() {
-  const navigate = useNavigate()
-
   return (
     <SectionHeading id='aboutMe' title="About Me" styling='text-white bg-grey text-4xl'>
       <div
