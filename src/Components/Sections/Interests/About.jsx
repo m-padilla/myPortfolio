@@ -1,6 +1,7 @@
 import SectionHeading from '../SectionHeading';
 import skills from '../../../data/skills.json'
 import { getImageUrl } from '../../../utils';
+import {useNavigate} from 'react-router-dom'
 
 function ShowSkills() {
 
@@ -65,6 +66,8 @@ function Introduction() {
 }
 
 function About() {
+  const navigate = useNavigate()
+
   return (
     <SectionHeading id='aboutMe' title="About Me" styling='text-white bg-grey text-4xl'>
       <div
@@ -88,12 +91,12 @@ function About() {
             <Introduction />
 
             <div className="pt-4">
-              <a
+              <button
                 className='p-3 bg-white rounded-lg hover:text-red-500'
-                href="/about"
+                onClick={() => navigate("/about")}
               >
                 Read More About Me
-              </a>
+              </button>
             </div>
 
           </div>

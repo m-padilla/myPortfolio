@@ -1,5 +1,6 @@
 // import React from 'react'
 import { getImageUrl } from '../../utils';
+import { useNavigate } from 'react-router-dom';
 
 
 function ShowSkills({ skills }) {
@@ -39,6 +40,7 @@ function ShowSkills({ skills }) {
 }
 
 function InfoCard({ details }) {
+    const navigate = useNavigate();
 
     return (
         <div 
@@ -62,10 +64,10 @@ function InfoCard({ details }) {
 
                 <div className='pt-5 pb-10'>
 
-                    <a 
-                    href={details.category === "Work" ? `/work/${details.name}` : `/project/${details.name}`}
+                    <button 
+                    onClick={details.category === "Work" ? () => navigate(`/work/${details.name}`) : () => navigate(`/project/${details.name}`)}
                     className='bg-transparent hover:bg-stone-700 rounded-lg p-3 border-2 border-teal-500'
-                    >View project</a>
+                    >View project</button>
 
                 </div>
 
