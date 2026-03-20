@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { getImageUrl } from "../../utils"
 
-function ImageGallary(arr) {
+function ImageGallery({images}) {
   const [currentImage, setCurrentImage] = useState(0);
-  const { images } = arr
 
   return (
     <div className="p-5">
@@ -46,4 +45,4 @@ function ImageGallary(arr) {
   )
 }
 
-export default ImageGallary
+export default ImageGallery

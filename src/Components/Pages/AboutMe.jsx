@@ -1,4 +1,4 @@
-import ImageGallary from '../Details/ImageGallary.jsx';
+import ImageGallery from '../Details/ImageGallery.jsx';
 import Footer from '../Footer/Footer.jsx';
 import Resume from "../Details/Resume_updated.pdf";
 import Awards from "../../data/awards.json";
@@ -64,7 +64,7 @@ function AboutMe() {
                     <p className='pb-10 text-sm md:text-xl'>I'm highly <strong>resourceful</strong>. When I run into a problem I don't know, I make it a point to find the answer—whether that means diving into documentation, researching online, or consulting with a colleague. <strong>I'm committed to constant growth</strong>, and I actively seek out new challenges. I study what others are building and push myself to recreate and improve on those projects using my own skillset.</p>
 
                     <p className='pb-10 text-sm md:text-xl'>Here are some of the awards that I received while in school:</p>
-                    <ImageGallary images={Awards} />
+                    <ImageGallery images={Awards} />
 
                     <h3 className='pt-10 pb-3 text-xl'>As a colleague</h3>
                     <p className='text-sm md:text-xl'>In group projects, I'm always ready to help whenever I can. I don't necessarily consider myself a leader, but I often end up taking initiative—checking in with teammates, setting up meetings, and making sure everyone stays on track. Back in university, I was usually the first to answer questions on our team Discord. I even remember being on a family trip for my sister's birthday and still jumping in to help my teammates.

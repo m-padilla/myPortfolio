@@ -25,7 +25,7 @@ function Footer() {
 
         <div className='text-white text-xs pt-3 '>Thanks for visiting!</div>
 
-        <ShowSocials isFooter='True' />
+        <ShowSocials isFooter={true} />
 
       </div>
 
